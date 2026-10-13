@@ -1,0 +1,40 @@
+{
+  "name": "crave-food-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "data:discover": "node scripts/discover-sources.js",
+    "data:scrape": "node scripts/scrape-permitted-source.js",
+    "data:normalize": "node scripts/normalize-data.js",
+    "data:validate": "node scripts/validate-data.js",
+    "data:import": "node scripts/import-dataset.js",
+    "test": "node --test test/crave.test.js"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.4.19",
+    "lucide-react": "^1.55.0",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "vite": "^8.3.4"
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "id": "openstreetmap-overpass",
+    "name": "OpenStreetMap (Overpass API)",
+    "type": "live_query_api",
+    "homepage": "https://www.openstreetmap.org",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "license": "Open Database License (ODbL) 1.0",
+    "attribution": "© OpenStreetMap contributors, licensed under ODbL 1.0",
+    "termsSummary": "Permits automated querying via Overpass API within fair-use limits. Requires attribution.",
+    "permissionStatus": "PERMITTED_OPEN_ACCESS",
+    "fieldsProvided": [
+      "id (OSM node / way ID)",
+      "name (verified business name)",
+      "amenity (restaurant / fast_food / cafe)",
+      "cuisine (raw tags, e.g. indian, biryani, chinese, pizza)",
+      "addr:street, addr:city, addr:suburb (locality)",
+      "lat, lon (real geographic coordinates)",
+      "opening_hours (operating times)",
+      "phone, website (contact info if registered)"
+    ],
+    "fieldsMissing": [
+      "Itemized dish menus and individual dish prices",
+      "Consumer star ratings and review counts",
+      "Live order acceptance and delivery tracking"
+    ],
+    "retrievalMethod": "Direct HTTP POST to Overpass API interpreter with rate limit throttle",
+    "rateLimitPolicy": "Max 2 concurrent requests, timeout 30s, courteous User-Agent header required",
+    "lastChecked": "2026-10-13T10:54:04.957Z",
+    "liveStatus": "OFFLINE",
+    "httpStatusCode": 504,
+    "verifiedAt": "2026-10-13T10:54:13.979Z"
+  },
+  {
+    "id": "kaggle-indian-food-101",
+    "name": "Indian Food 101 Dataset (Kaggle / Curated Open Access)",
+    "type": "licensed_open_dataset",
+    "homepage": "https://www.kaggle.com/datasets/the-ultimate-indian-food-dataset",
+    "sourceUrl": "https://raw.githubusercontent.com/aritro1011/ExploratoryDataAnalysis_Indian_Food/main/indian_food.csv",
+    "license": "CC0 1.0 Universal (Public Domain Dedication)",
+    "attribution": "Public Domain / CC0 1.0",
+    "termsSummary": "Dedicated to the public domain under CC0 1.0. Allows unrestricted reproduction and commercial reuse.",
+    "permissionStatus": "PERMITTED_PUBLIC_DOMAIN",
+    "fieldsProvided": [
+      "name (authentic dish names across Indian states)",
+      "ingredients (real recipe ingredients)",
+      "diet (vegetarian / non-vegetarian)",
+      "prep_time, cook_time (minutes)",
+      "flavor_profile (spicy, sweet, etc.)",
+      "course (starter, main course, dessert, snack)",
+      "state, region (cultural origin)"
+    ],
+    "fieldsMissing": [
+      "Live restaurant inventory and real-time stock",
+      "Dynamic pricing per specific commercial restaurant"
+    ],
+    "retrievalMethod": "Direct HTTP GET for static version-controlled open dataset",
+    "rateLimitPolicy": "Standard GitHub raw content delivery",
+    "lastChecked": "2026-10-13T10:54:04.958Z",
+    "liveStatus": "ONLINE",
+    "httpStatusCode": 200,
+    "verifiedAt": "2026-10-13T10:54:14.188Z"
+  },
+  {
+    "id": "free-food-menus-mit",
+    "name": "Free Food Menus Open Catalog",
+    "type": "licensed_open_dataset",
+    "homepage": "https://github.com/igdev116/free-food-menus-api",
+    "sourceUrl": "https://raw.githubusercontent.com/igdev116/free-food-menus-api/main/db.json",
+    "license": "MIT License",
+    "attribution": "Copyright (c) igdev116",
+    "termsSummary": "Permitted under MIT license for educational, demonstration, and commercial prototypes.",
+    "permissionStatus": "PERMITTED_MIT",
+    "fieldsProvided": [
+      "Dish name (Pizza, Burger, Beverages, Desserts)",
+      "Category tags",
+      "Food item descriptions",
+      "Photographic references"
+    ],
+    "fieldsMissing": [
+      "Indian regional thalis and biryanis (supplemented by Indian Food 101)",
+      "Live order confirmation"
+    ],
+    "retrievalMethod": "Direct HTTP GET",
+    "rateLimitPolicy": "Static JSON fetch",
+    "lastChecked": "2026-10-13T10:54:04.958Z",
+    "liveStatus": "ONLINE",
+    "httpStatusCode": 200,
+    "verifiedAt": "2026-10-13T10:54:14.361Z"
+  }
+]
